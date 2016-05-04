@@ -1,0 +1,4 @@
+br\hcpappex1\controller\UserRegController.class
+br\hcpappex1\model\UserRegister.class
+br\hcpappex1\dao\UserRegisterManager.class
+br\hcpappex1\dao\UserRegisterManagerImpl.class
