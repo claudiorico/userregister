@@ -11,7 +11,7 @@
 <script src="<c:url value="/assets/js/jquery.js" />"></script>
 <script src="<c:url value="/assets/js/jquery-ui.min.js" />"></script>
 
-<title>Register new user</title>
+<title>Register new user v2</title>
 </head>
 <body>
 
