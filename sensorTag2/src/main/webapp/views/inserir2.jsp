@@ -9,10 +9,39 @@
 <!-- Bootstrap -->
 <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Inserir Registro</title>
+
+<script type="text/javascript">
+
+function getNumber(){
+	return Math.floor((Math.random() * 100) + 1);
+}
+
+function setValue(){
+	document.getElementById("c_tagaccx").value = getNumber();
+	document.getElementById("c_tagaccy").value = getNumber();
+	document.getElementById("c_tagaccz").value = getNumber();
+	document.getElementById("c_taggyrox").value = getNumber();
+	document.getElementById("c_taggyroy").value = getNumber();
+	document.getElementById("c_taggyroz").value = getNumber();
+	document.getElementById("c_tagmagx").value = getNumber();
+	document.getElementById("c_tagmagy").value = getNumber();
+	document.getElementById("c_tagmagz").value = getNumber();
+	document.getElementById("c_tagobjtemp").value = getNumber();
+	document.getElementById("c_tagambtemp").value = getNumber();
+	document.getElementById("c_tagbmp").value = getNumber();
+	document.getElementById("c_tagoptical").value = getNumber();
+}
+
+//$(document).ready(setValue())
+
+</script>
+
 </head>
-<body>
+<body onload="setValue()">
 
 	<table>
 
@@ -43,7 +72,7 @@
 				<td>tagMagY:</td>
 				<td><form:input path="c_tagmagy" /></td>
 				<td>tagMagZ:</td>
-				<td><form:input path="c_tagmagx" /></td>
+				<td><form:input path="c_tagmagz" /></td>
 			</tr>
 			<tr>
 				<td>tagObjTemp:</td>
